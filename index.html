@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario</title>
+</head>
+
+<body>
+    <h1>Aula de Formulário</h1>
+    <br>
+
+    <nav>
+        <button onclick="location.href='pagina1.html'">Pagina 1</button>
+        <button onclick="location.href='pagina2.html'">Pagina 2</button>
+        <button onclick="location.href='pagina3.html'">Pagina 3</button>
+    </nav>
+
+    <form method="post">
+        <br>
+        <label for="nome" class="form-control">Nome: </label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        <br>
+        <br>
+
+        <label for="comentarios" class="form-control">Comentarios: </label>
+        <br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+
+        <br>
+
+        <p> Deseja receber email?</p>
+        <input type="checkbox" id="email" name="Dsemail" value="email">
+
+        <br>
+
+        <label for=" senha "> Senha: </label>
+        <input type=" password " id=" senha " name=" senha ">
+
+        <br><br>
+
+        <label for="cor"> Escolha uma cor: </label>
+        <input type="color" id="cor" name="cor">
+
+        <br><br>
+
+        <label for="data">Escolha uma dara:</label>
+        <input type="date" id="date" name="data">
+
+        <br><br>
+
+        <label for="volume">Volume: </label>
+        <input type="range" id="volume" name="volume" min="0" max="100">
+
+        <br><br>
+
+        <p> Curso: </p>
+
+        <input type="radio" id="manha" name="turno" value="manha">
+        <label for="manha">Manhã</label> <br>
+        <input type="radio" id="tarde" name="turno" value="tarde">
+        <label for="tarde"> Tarde </label> <br><br>
+
+        <label for="frutas">Escolha uma fruta:</label>
+        <input list="frutas" name="fruta" id="fruta">
+        <datalist id="frutas">
+            <option value="Maça"></option>
+            <option value="Banana"></option>
+            <option value="Laranja"></option>
+        </datalist><br>
+        <input type="submit" value="Entrar">
+
+
+    </form>
+</body>
+
+</html>
